@@ -186,13 +186,14 @@ export function Hero() {
             <div className="absolute left-1/2 top-0 h-3 w-3 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_20px_4px_var(--primary)]" />
             <div className="absolute bottom-2 right-6 h-2 w-2 rounded-full bg-accent shadow-[0_0_20px_4px_var(--accent)]" />
           </motion.div>
-          <div className="absolute inset-14 overflow-hidden rounded-full border border-primary/30 shadow-[0_0_60px_-10px_var(--primary)]">
+          <div className="absolute inset-12 overflow-hidden rounded-full border border-primary/30 bg-secondary shadow-[0_0_60px_-10px_var(--primary)]">
             <img
               src="/chethan.jpeg"
               alt="Chethan Gowda portrait"
               className="h-full w-full object-cover"
+              style={{ objectPosition: "50% 18%" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-full border border-border bg-background/80 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground backdrop-blur">
             CG · v.2026
